@@ -1,0 +1,5 @@
+The dog barks
+
+i=0 (T)
+
+i=1 (h)
