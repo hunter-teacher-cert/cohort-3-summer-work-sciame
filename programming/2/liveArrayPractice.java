@@ -1,3 +1,5 @@
+//I was just following along with Dr. Sakas during class...the group work is the other java file for day 2, (Greg Sciame)
+
 public class arrayPractice {
   static int [] someData = new int[] {45,23,5,67,23};
   //static int someDataSize = someData.length;
