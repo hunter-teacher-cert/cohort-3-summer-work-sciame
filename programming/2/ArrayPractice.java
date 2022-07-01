@@ -5,7 +5,7 @@ ArrayPractice.java by Breakout Room 8
  * Greg Sciame
 * collaborators: Nicole Cojuango, Parmanand Mohanlall, Saranii Muller
 
-(Our group didn't finish all the basic exercises during class, but we were talking through the details the whole time...Saranii needs every detail to be explained, and I'm looking at it as an opportunity to practice teaching, to help Saranii, and to try and make the best of it...Nicole and Parmanand were helpful with feedback & looking up resources, etc...for example Nicole recognized that the code we needed to use for the printArray() method had similarities to the histogram prework problem...so we repurposed a bit of her code from that and changed the paramater names to match our code...and Pramanand knew how to do some of these operations in python, so he was looking up python example solutions for reference...one of the TAs popped in and we asked the TA to hang out longer since we were stuck here and there...I am comfortable with the Java half the time, since it is similar in many ways to JavaScript and I teach intro to JS as part of my curriculum...but unless a student in the breakout room is more comfortable with Java than me...then it takes decent time to figure out which differences in Java from JavaScript are causing me hiccups...I was nervous on day 0, but now I am increasingly more excited to learn more and build cool projects in the future:)
+(Our group didn't finish all the basic exercises during class, but we were talking through the details the whole time...Saranii wants every detail to be explained, and I'm looking at it as an opportunity to practice teaching, to help Saranii, and to try and make the best of it...so we added a lot of comments for clarification.  Nicole and Parmanand were helpful with feedback, bouncing ideas & looking up resources, etc...for example Nicole recognized that the code we needed to use for the printArray() method had similarities to the histogram prework problem...so we repurposed a bit of her code from that and changed the array name to match our code...and Pramanand knew how to do some of these array operations in python, so he was looking up python example solutions for possible reference, and we were also looking at the PDF of Dr. Sakas's slides to get some ...one of the TAs popped in and we asked the TA to hang out longer since we were stuck here and there...I am comfortable with Java half the time, since it is similar in many ways to JavaScript and I teach intro to JS as part of my curriculum...but unless a student in the breakout room is more comfortable with Java than me...then it takes decent time to figure out which differences in Java from JavaScript are causing me hiccups...I was nervous on day 0, but the more I realize that I am a student instead of the teacher, I am increasingly more excited to come to class & learn more and build cool projects in the future:)
  
  */
 
@@ -93,7 +93,7 @@ public class ArrayPractice
   {
     //creates an array of a certain size
     Random r = new Random();
-    int[] data = new int[size]; //size here is a local variable will be defined later by someone else - maybe user input, or within the method call in main, here is an example call of the method: buildRandomArray(_____,_____)  
+    int[] data = new int[size]; //size here is the paramater ("local variable") being used & it will be defined later by someone else - maybe user input, or within the method call in main, here is an example call of the method: buildRandomArray(_____,_____)  
 
     /* YOUR BRILLIANT CODE HERE */
     //starting condition int i = 0; 
@@ -101,7 +101,7 @@ public class ArrayPractice
     //i++ increment up by 1 
     //can also use: i++,i+=1,i=i+1
 
-    //this loop builds array with random numbers
+    //this loop builds an array with random numbers
   for(int i = 0; i < data.length; i++){
     data[i] = r.nextInt(maxValue);
 
@@ -160,7 +160,7 @@ System.out.print("{" + data[0]);
     int i = -1; //if the value is not found it will print -1
     int currSize = data.length; //sets currSize variable to the length of data array 
    // while i iS leSS than currSize and the current index iSnt the value
-    while (i < currSize && data[i] != value ) //conditionals : && and - both conditions MUST be true,  || or
+    while (i < currSize && data[i] != value ) //conditionals : && and - both conditions MUST be true,  || ➡ or, != ➡ not equal
     {
         i++;
     }  
