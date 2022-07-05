@@ -5,7 +5,40 @@ ArrayPractice.java by Breakout Room 8
  * Greg Sciame
 * collaborators: Nicole Cojuango, Parmanand Mohanlall, Saranii Muller
 
-(Our group didn't finish all the basic exercises during class, but we were talking through the details the whole time...Saranii wants every detail to be explained, and I'm looking at it as an opportunity to practice teaching, to help Saranii, and to try and make the best of it...so we added a lot of comments for clarification.  Nicole and Parmanand were helpful with feedback, bouncing ideas & looking up resources, etc...for example Nicole recognized that the code we needed to use for the printArray() method had similarities to the histogram prework problem...so we repurposed a bit of her code from that and changed the array name to match our code...and Pramanand knew how to do some of these array operations in python, so he was looking up python example solutions for possible reference, and we were also looking at the PDF of Dr. Sakas's slides to get some ...one of the TAs popped in and we asked the TA to hang out longer since we were stuck here and there...I am comfortable with Java half the time, since it is similar in many ways to JavaScript and I teach intro to JS as part of my curriculum...but unless a student in the breakout room is more comfortable with Java than me...then it takes decent time to figure out which differences in Java from JavaScript are causing me hiccups...I was nervous on day 0, but the more I realize that I am a student instead of the teacher, I am increasingly more excited to come to class & learn more and build cool projects in the future:)
+(Our group didn't finish all the basic
+exercises during class, but we were talking
+through the details the whole time...some
+people want every detail to be explained, and
+I'm looking at it as an opportunity to practice
+teaching, and to try and make the best of
+it...so Saranii added a lot of comments for
+clarification as we were going over what each
+line meant.  Nicole and Parmanand were
+helpful with feedback, bouncing ideas & looking
+up resources, etc...for example Nicole
+recognized that the code we needed to use for
+the printArray() method had similarities to the
+histogram prework problem...so we repurposed a
+bit of her code from that and changed the array
+name to match our code...and Pramanand knew how
+to do some of these array operations in python,
+so he was looking up python example solutions 
+for possible reference, and we were also
+looking at the PDF of Dr. Sakas's slides to get
+some ideas...one of the TAs popped in and we
+asked the TA to hang out longer since we were
+stuck here and there...I am comfortable with
+Java half the time, since it is similar in many
+ways to JavaScript and I teach intro to JS as
+part of my curriculum...but unless a student in
+the breakout room is more comfortable with Java
+than me...then it takes decent time to figure
+out which differences in Java from JavaScript
+are causing me hiccups...I was nervous on day
+0, but the more I realize that I am a student
+instead of the teacher, I am increasingly more
+excited to come to class & learn more and build
+cool projects in the future:)
  
  */
 
