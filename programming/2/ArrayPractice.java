@@ -62,11 +62,11 @@ cool projects in the future:)
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Basic:
    Complete these methods:
-   - buildRandomArray line 85-93 👍
-   - printArray line 109 👍
-   - arraySum line 147 👍
-   - firstOccurence line 129 ...
-   - findMaxValue line 184
+   - buildRandomArray line 85-93 👍 (solved this together as a group)
+   - printArray line 109 👍 (solved this together as a group)
+   - arraySum line 147 👍 (solved this together as a group)
+   - firstOccurence line 129 ...👍 (figured this out by looking at Jihae Park's code)
+   - findMaxValue line 184 👍 (I got this working after analyzing Joshua Higgin's repo)
 
    Intermediate:
    Complete all the methods for basic and also
@@ -122,7 +122,8 @@ public class ArrayPractice
      and up to but not including maxValue
   */
 //buildRandomArray 
-  public static int[] buildRandomArray( int size, int maxValue )//definition of a method with parameters which are in parentheses - a certain size with a maximum value
+  public static int[] buildRandomArray( int size, int maxValue )
+  //definition of a method with parameters which are in parentheses - a certain size with a maximum value
   {
     //creates an array of a certain size
     Random r = new Random();
@@ -160,11 +161,11 @@ public class ArrayPractice
 //printArray 
   public static void printArray( int[] data ){
   
-System.out.print("{" + data[0]);
+System.out.print("[" + data[0]);
     for (int i = 1; i < data.length; i++) {
         System.out.print(", " + data[i]);
     }
-    System.out.print("}");
+    System.out.print("]");
   System.out.println("");
     /* YOUR BRILLIANT CODE HERE */
   }
@@ -187,19 +188,29 @@ System.out.print("{" + data[0]);
     
 //firstOccurence - searches through the array for a specific number
   //array called data, integer called value
+
+  //I copied this by looking at Jihae Park's repo (so I can have working array tools for the next array activity)
   public static int firstOccurence(int[] data, int value)
   {
-  // go through each index until you find the value, then return that index
-    int i = -1; //if the value is not found it will print -1
+for(int i = 0; i < data.length; i++){
+  if(data[i] == value){
+    return i;//if the value is in the array the index where it is located will be returned
+  }
+}
+return -1;  //if the value wasn't found, this method will return -1 to indicate that it wasn't found, since there are no negative array indeces
+
+  }
+  /* go through each index until you find the value, then return that index
+    int i=0; 
     int currSize = data.length; //sets currSize variable to the length of data array 
    // while i iS leSS than currSize and the current index iSnt the value
     while (i < currSize && data[i] != value ) //conditionals : && and - both conditions MUST be true,  || ➡ or, != ➡ not equal
     {
         i++;
     }  
-    return i; // change this (it is just a placeholder to "get past" the compiler)
+    return -1; //if the value is not found it will print -1
   }
-
+*/
 
   /**
      Parameters: data - an array of ints
@@ -259,11 +270,15 @@ System.out.print("{" + data[0]);
 
 //findMaxValue
   public static int findMaxValue( int[] data ) {
-    int count=0;  // will hold the maximum value;
+    int m = Integer.MIN_VALUE;  // will hold the maximum value;
 
     /* YOUR BRILLIANT CODE HERE */
-
-    return count;
+for (int i = 0; i < data.length; i++){
+  if(m < data[i]){//if the current value of m is smaller than the array index value, then reassign the value of m to be the indexed value...after the traversal is complete, the largest value will be assigned to m...I got this working by looking at Joshua Higgin's code repo so I can have working tools for the next array activities
+    m = data[i];
+  }
+}
+    return m;
   }
 
 
@@ -318,8 +333,11 @@ System.out.print("{" + data[0]);
     int[] data = buildRandomArray(10, 20);
     // int[] data2 = buildincreasingArray(10,5,3);
     printArray(data);
+    System.out.println("The max value is: " +findMaxValue(data));
+    System.out.println("The first occurence of integer 19 is at index: "+firstOccurence(data, 19)+ " \n(if it says index -1, then there is no occurence of integer 12");
     // printArray(data2);
 System.out.println(arraySum(data));
     // add calls to show that the methods you write work.
+    
   }
 }
