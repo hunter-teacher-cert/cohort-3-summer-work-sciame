@@ -166,10 +166,11 @@ I followed along with Marieke as she was demo-ing (she is in my group and solved
     for(int i = row-1; i <= row + 1; i++){
       for(int w = col-1; w <= col +1; w++){
         //System.out.print(board[i][w]);
-        if(i==row && w==col){
-          continue;
-      } else {
+        if(i >= 0 && w >= 0 && i < board.length && w < board[0].length){
           board[i][w]='X';
+          
+      } else if(i==row && w==col){
+          continue;
       }
     }
   }
@@ -192,7 +193,7 @@ I followed along with Marieke as she was demo-ing (she is in my group and solved
   public static void explodeAllChar(char[][] board, char c)
   {
     //July 6, 2022
-    //I got this code from Josh Higgins...he was explaining how it works to our new group and in the sake of moving on, I copied it so I could hava a working algorithm to apply to the Game of Life problem...
+    //I got this code from Joshua Higgins...he was explaining how it works to our new group and in the sake of moving on, I copied it so I could have a a working algorithm to apply to the Game of Life problem...
     boolean[][] willExplode = new boolean[board.length][board[0].length];
     for(int i = 0; i < board.length; i++){
       Array.fill(willExplode[i], false);
@@ -212,7 +213,7 @@ I followed along with Marieke as she was demo-ing (she is in my group and solved
           explodeSquare(board,i,j);
         }
       }
-    }mr
+    }
     /* YOUR AWESOME CODE HERE */ 
   }
 
