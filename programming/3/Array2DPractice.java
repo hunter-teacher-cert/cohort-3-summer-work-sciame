@@ -1,34 +1,3 @@
-/*
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@sciame 
-hunter-teacher-cert
-/
-cs-ed-cohort-3-summer-2022
-Public
-generated from hunter-teacher-cert/csci70900-summer2021
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-cs-ed-cohort-3-summer-2022/daily/3/Array2DPractice.java /
-@tofr
-tofr prelim edits
-Latest commit 89fd5ea 4 days ago
- History
- 2 contributors
-@zamansky@tofr
-242 lines (192 sloc)  4.8 KB
-*/
 import java.io.*;
 import java.util.*;
 
@@ -222,7 +191,29 @@ I followed along with Marieke as she was demo-ing (she is in my group and solved
   */
   public static void explodeAllChar(char[][] board, char c)
   {
-    /* YOUR AWESOME CODE HERE */
+    //July 6, 2022
+    //I got this code from Josh Higgins...he was explaining how it works to our new group and in the sake of moving on, I copied it so I could hava a working algorithm to apply to the Game of Life problem...
+    boolean[][] willExplode = new boolean[board.length][board[0].length];
+    for(int i = 0; i < board.length; i++){
+      Array.fill(willExplode[i], false);
+    }
+    
+    for(int i = 0; i < board.length; i++){
+      for(int j = 0; j < board[i].length; j++){
+        if(board[i][j] == c){
+           willExplode[i][j] = true;
+        }
+      }
+    }
+
+    for(int i = 0; i < board.length; i++){
+      for(int j = 0; j < board[i].length; j++){
+        if(willExplode[i][j]){
+          explodeSquare(board,i,j);
+        }
+      }
+    }mr
+    /* YOUR AWESOME CODE HERE */ 
   }
 
 
