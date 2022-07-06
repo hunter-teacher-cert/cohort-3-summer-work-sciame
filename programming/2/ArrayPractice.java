@@ -161,11 +161,11 @@ public class ArrayPractice
 //printArray 
   public static void printArray( int[] data ){
   
-System.out.print("[" + data[0]);
+System.out.print("{" + data[0]);
     for (int i = 1; i < data.length; i++) {
         System.out.print(", " + data[i]);
     }
-    System.out.print("]");
+    System.out.print("}");
   System.out.println("");
     /* YOUR BRILLIANT CODE HERE */
   }
@@ -321,6 +321,7 @@ for (int i = 0; i < data.length; i++){
   public static void flip( int[] data )
   {
     /* YOUR BRILLIANT CODE HERE */
+    
   }
 
 
