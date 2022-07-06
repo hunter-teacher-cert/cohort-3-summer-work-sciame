@@ -3,6 +3,7 @@ import java.util.*;
 import java.lang.Math;
 
 /**
+***IF YOU TEST THIS OUT, YOU HAVE TO PRESS ENTER 20 TIMES TO COMPLETE THE SIMULATION***
  * Conway's Game of Life by Breakout Room #7: July 6th, 2022
  * Greg Sciame
  * collaborators: Joshua Higgins, Christine Marra, Dave Ciolino-Volano
@@ -162,8 +163,16 @@ This is the one Joshua Higgins made from our group...I put it here to compare to
     setCell(board, 1, 14, 'X');
     setCell(board, 10, 5, 'X');
     setCell(board, 5, 10, 'X');
-
-    for(int i = 0; i < 10; i++){
+    setCell(board, 10, 0, 'X');
+    setCell(board, 13, 15, 'X');
+    setCell(board, 13, 14, 'X');
+    setCell(board, 12, 13, 'X');
+    setCell(board, 12, 14, 'X');
+    setCell(board, 11, 14, 'X');
+    setCell(board, 20, 5, 'X');
+    setCell(board, 15, 10, 'X');
+//below is a loop that will run 20 generations for testing
+    for(int i = 0; i < 21; i++){
       System.out.println("Generation " + i);
       printBoard(board);
       in.nextLine(); //it won't continue the program until the user presses the 'enter' key   (see the very top of the Cgol class definition to see what line of code is necessary for this line to work)
@@ -186,3 +195,10 @@ This is the one Joshua Higgins made from our group...I put it here to compare to
   }//end main()
 
 }//end class
+
+
+
+
+
+
+
