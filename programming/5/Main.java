@@ -12,6 +12,12 @@ class Main {
     //g.enterInfo();
     g.showInfo();
     
-    
+    g.setID ("12345678");
+    g.showInfo();
+
+    g.setID ("123");
+    String aString = g.getID();
+    System.out.println(aString);
+    g.showInfo();
   }
 }

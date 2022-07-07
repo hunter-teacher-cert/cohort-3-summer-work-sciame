@@ -8,6 +8,15 @@ class Grade{
   private String ID;
   private double score;
   private double weight;
+
+  public void setID(String id){
+    ID = id;
+  }
+
+  public String getID(){
+    return ID;
+  }
+  
   public Grade(){
     ID = "";
     score = 0.0;
