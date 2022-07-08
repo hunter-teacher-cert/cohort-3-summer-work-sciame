@@ -21,7 +21,7 @@ public class Fence
     //I typed this up as I was following along with Stacy Golstein's presentation of their group's solution, since I hadn't gotten to this yet
     if(n==0){
       return " ";
-    } else if(n==1){ //I added 'else if' instead of 'if'...seems to work the same
+    } else if(n==1){ //I added 'else if' instead of a new 'if'...seems to work the same and feels more like one complete statement
       return "|";
     } else {
       return fenceR(n-1) + "--|";

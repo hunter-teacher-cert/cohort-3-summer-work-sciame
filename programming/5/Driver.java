@@ -3,7 +3,7 @@ import java.util.*;
 
 
 /**
- * Driver class for Time class  by Breakout room 7 on July 7th, 2022
+ * Driver class for Time class  by Breakout room #7 on July 7th, 2022
  * Greg Sciame
  * collaborators: Christine Marra, Joshua Higgins, Dave Ciolino Volano
  */
@@ -27,10 +27,16 @@ public class Driver {
   Time t2;
 
 	//assign var the address of a newly-apportioned Time object
-	t = new Time();
-  t2 = new Time(1,2,3);
-  t.toString();
-  t2.toString();
+	t = new Time(10, 30, 15);
+  t2 = new Time(9,40,15)
+  System.out.println(t.toString());
+  System.out.println(t);
+  String temp = t + "!";
+  System.out.println(temp);
+
+  //t.toString();
+  //t2.toString();
+  
     }//end main()
 
 }//end class

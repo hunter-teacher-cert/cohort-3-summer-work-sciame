@@ -116,9 +116,12 @@ public class Time {
     */
     public boolean equals(Time other){
 	// your code here)
-
-	return false; // change this
-    }
+if(this.hours == other.hours && this.minutes == other.minutes && this.seconds == other.seconds){
+	return true; 
+  } else {
+  return false;
+  }    
+} 
 
     /**
        Parameters:
@@ -132,7 +135,12 @@ public class Time {
     */
     public int compareTo(Time other){
 	// your code here)
-
+//coding along with Marisa Shuman's presentation...
+      if(this.hours > other.hours){
+        return 1;
+      } else if(this.hours < other.hours){
+        
+      }
 	return 0; // change this
     }
     

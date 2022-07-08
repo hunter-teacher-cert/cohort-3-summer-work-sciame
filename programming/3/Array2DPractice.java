@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+import java.lang.Math;
 
 /**
  * Array2DPractice by Breakout Room 4 July 5th, 2022
@@ -283,20 +284,3 @@ I followed along with Marieke as she was demo-ing (she is in my group and solved
   }
 }
 
-/*
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-You have no unread notifications
-  */
