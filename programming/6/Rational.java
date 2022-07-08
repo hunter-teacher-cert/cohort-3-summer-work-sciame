@@ -1,7 +1,7 @@
 /**
  * Rational class by Breakout Room 9
  * Greg Sciame
- * collaborators: Mike Park, Kiana H, Marieke T
+ * collaborators: Mike Park, Kiana Herr, Marieke Thomas
  */
 
 
@@ -90,9 +90,9 @@ public class Rational
     /* YOUR ELEGANT CODE HERE */
     this._numerator *= r._numerator;
     this._denominator *= r._denominator;
+    this.simplify();
 
   }
-
 
   // divide
   // same as multiply, except operation is division
@@ -101,9 +101,29 @@ public class Rational
     /* YOUR ELEGANT CODE HERE */
     if(r._numerator == 0) {
       System.out.println("Can't divide by zero. Your number is unchanged.");
-    } else {
-      (_numerator/_denominator) * (r._denominator/r._numerator);
+   }  else {
+        this._numerator *= r._denominator;
+        this._denominator *= r._numerator;
+        this.simplify();
       }
+  
   }
 
+  public void equals(Rational other){
+    this.simplify();
+    other.simplify();
+  }
+  //reduces the rational number to lowest terms
+  public void simplify(){
+    int gcf = 1; 
+    //check values between 2 and smaller int for divisibility into both ints
+    for (int i = 2; i < Math.min(_numerator, _denominator); i++){ 
+      if (_numerator % i == 0 && _denominator % i == 0){
+        gcf = i;
+      }
+    }
+    //divide both numerator and denominator by gcf
+    _numerator /= gcf;
+    _denominator /= gcf;
+  }
 }//end class

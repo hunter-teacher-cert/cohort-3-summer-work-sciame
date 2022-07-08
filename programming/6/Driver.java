@@ -1,5 +1,6 @@
 
 /**
+Greg Sciame July 8th, 2022
  * class Driver
  * tester class for class Rational
  */
@@ -38,8 +39,10 @@ public class Driver
       System.out.print( r + " / " + t + " = ");
       r.divide(t);
       System.out.println(r);
-  /*~~~~~v~~~~~~~~~~down~goer~3~~~~~~~~~~~~~v~~~~~
-    ~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~*/
+
+      //Testing new method  
+      r.simplify();
+      System.out.println(r);
   }
 
 }//end class
