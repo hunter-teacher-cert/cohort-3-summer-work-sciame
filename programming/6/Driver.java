@@ -1,6 +1,7 @@
 
 /**
 Greg Sciame July 8th, 2022
+Collaborators: Kiana Herr, Marieke Thomas, Moo Joon Park
  * class Driver
  * tester class for class Rational
  */

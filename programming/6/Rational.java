@@ -1,7 +1,7 @@
 /**
  * Rational class by Breakout Room 9
  * Greg Sciame
- * collaborators: Mike Park, Kiana Herr, Marieke Thomas
+ * collaborators: Moo Joon Park, Kiana Herr, Marieke Thomas
  */
 
 
@@ -117,7 +117,7 @@ public class Rational
   public void simplify(){
     int gcf = 1; 
     //check values between 2 and smaller int for divisibility into both ints
-    for (int i = 2; i < Math.min(_numerator, _denominator); i++){ 
+    for (int i = 2; i <= Math.min(_numerator, _denominator); i++){ 
       if (_numerator % i == 0 && _denominator % i == 0){
         gcf = i;
       }
