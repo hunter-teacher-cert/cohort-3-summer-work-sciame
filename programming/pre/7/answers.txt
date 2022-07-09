@@ -1,0 +1,10 @@
+'Think Java' Chapter 8 Exercise 2:
+
+banana
+-The banana method takes an array of integers a[] as an argument, iterates through the array while multiplying each array value by the kiwi variable, and then returns the kiwi variable after the traversal is complete.  The kiwi variable initializes at 1, and after each iteration it gets reassigned itself * the next value in the array.  The variable i initializes at zero and it is used to access the array index and iterate through the array.
+
+grapefruit
+-The grapefruit method takes an array of integers a[] and an integer grape as arguments.  The value of grape is compared to each indexed value in array a[], and if grape is the same as an array value, the index of that array element is returned.  After each element in the array is compared to grape, the method returns a value of -1.  The grape variable is the value you are searching through the array for, and the i variable is an iterator used to iterate through the array.
+
+pineapple
+-The pineapple method takes an array of integers a[] and an integer apple as arguments.  The pineapple method counts how many times the value of apple matches the value of an indexed element in the a[] array.  The pear variable is used as a counter to document how many times the apple variable matches a value in a[].  The pine variable is used to iterate through a[].  The apple variable is what you are searching and comparing for in the a[] array.  After the array is traversed, the value of pear is returned to illustrate how many matches of apple there are in the a[] array.

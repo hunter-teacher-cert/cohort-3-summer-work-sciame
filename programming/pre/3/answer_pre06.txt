@@ -1,0 +1,25 @@
+Think Java Chapter 7.9...
+exercise 1:
+
+1.)
+loop execution table:
+i     n
+============ 
+10   10
+5    10
+6    10
+3    10
+4    10
+2    10
+
+
+2.)
+10
+5
+6
+3
+4
+2
+
+3.)
+yes, this loop terminates for any positive value of n because after the nth iteration of the loop, eventually i==1 which is the criteria  for breaking out of the loop because 'while(i>1)' doesn't execute when i==1, since i==1 does not meet the criteria of 'while(i>1)'.

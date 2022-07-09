@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+class Answer{
+public static void zoop() {
+//4***baffle() method invoked...next time baffle() is invoked, we know it prints wug, calls ping()which adds a . ((+"wug."))
+    baffle();
+//8***"You wugga " is printed on a new line with the introduction of a new System.out.print()
+    System.out.print("You wugga ");
+//9*** baffle() is invoked, which uses ping() and concatenates "wug." to make line 2 read: "You wugga wug.\n" there is a line break because  ping() uses System.out.println(".")...so the ln means to break the line after the String in the parentheses is concatenated.
+//up to this point the message reads: "No, I wug.\n" + "You wugga wug.\n"
+    baffle();
+}
+
+//1*****Program starts with main()...
+public static void main(String[] args) {
+//2***"No, I " is printed to screen
+    System.out.print("No, I ");
+//3***zoop() method invoked
+    zoop();
+//10***"I " is printed on a new line (line 3) since a new System.out.println() was just used in step 9
+    System.out.print("I ");
+/*
+11*** baffle() is invoked, which uses ping() and concatenates "wug." and goes to the next line to make line 3 read: "I wug." Now the final message reads: "No, I wug.\n" + "You wugga wug.\n" + "I wug.\n"*******SOLUTION<----11th step through the methods
+*/
+    baffle();
+}
+
+public static void baffle() {
+//5***wug is concatenated with the previous string so it now reads: No, I wug
+    System.out.print("wug");
+//6***ping method invoked
+    ping();
+}
+
+public static void ping() {
+//***7 "." is concatenated with the previou string so it now reads: No, I wug. and after the "." a new line is then created because of the ln at the end of println
+    System.out.println(".");
+}
+
+}

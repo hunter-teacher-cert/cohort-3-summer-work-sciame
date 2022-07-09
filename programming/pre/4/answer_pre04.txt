@@ -1,0 +1,66 @@
+Exercise 1
+==================
+if (x > 0 && x < 10) {
+            System.out.println("positive single digit number.");
+}
+
+Exercise 2
+==================
+main | bizz[5] buzz[2]
+zoop | fred["just for"] bob[5]
+***print "just for \n"
+ping | strangStrung["not "] 
+***print "any not more \n"
+clink| fork[4] 
+***print "It's "
+zoop | fred["breakfast "] bob[4]
+***print (concatenate--> "It's " + "breakfast \n" + "!")
+
+complete output:
+===================
+/*
+I added the '\n' to specify where the new line breaks are when System.out.println() is used
+*/
+
+just for \n
+any not more \n
+It's breakfast \n
+!
+===================
+
+
+
+
+Exercise 3
+==================
+//program from section 5.8...
+public static void countdown(int n) {
+    if (n == 0) {
+        System.out.println("Blastoff!");
+    } else {
+        System.out.println(n);
+        countdown(n - 1);
+    }
+}
+
+
+countdown(4);
+countdown | n[4]
+***print 4\n
+countdown | n[3]
+***print 3\n
+countdown | n[2]
+***print 2\n
+countdown | n[1]
+***print 1\n
+countdown | n[0]
+***print Blastoff!\n
+
+complete output:
+===================
+4
+3
+2
+1
+Blastoff!
+===================
