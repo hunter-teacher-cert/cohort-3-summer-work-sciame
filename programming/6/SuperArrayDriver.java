@@ -9,9 +9,16 @@ public class SuperArrayDriver
     System.out.println("Testing default constructor.");
     SuperArray sa = new SuperArray();
 
+    SuperArray sa2 = new SuperArray(100);
+    //System.out.println(sa2.data[5]);
+    System.out.println("Testing add and printing the result:");
+    sa2.add(300);
+    sa2.add(17);
+    sa2.print();
     System.out.println("Testing empty print:");
     System.out.println(sa);
-   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+   
     System.out.println("Testing isEmpty (should be true)");
     System.out.println(sa.isEmpty());
 
@@ -26,6 +33,9 @@ public class SuperArrayDriver
     }//for i
     System.out.println(sa);
     System.out.println(sa.isEmpty());
+    System.out.println(sa.get(9));
+
+    
 
     System.out.println("\nTesting add at index 5, 0 and 17(end)");
     sa.add(5, 100);
@@ -44,6 +54,7 @@ public class SuperArrayDriver
 
     sa.remove(15);
     System.out.println(sa);
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   }//main

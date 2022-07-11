@@ -1,5 +1,5 @@
 /**
- * SuperArray by Team MarvelvsDC
+ * SuperArray by Breakout Room #9 July 8th, 2022
  * Greg Sciame
  * collaborators: Merieke Thomas, Kiana Herr, Moo Joon Park
  */
@@ -39,7 +39,7 @@ public class SuperArray
   public SuperArray( int size )
   {
     //init underlying/inner storage of specified capacity
-    this.data = new int [size];
+    this.data = new int[size];
 
     //init instance vars
     this.numberElements = 0;
@@ -50,38 +50,60 @@ public class SuperArray
   public SuperArray()
   {
     //init underlying/inner storage of capacity 10
-this.data = new int [10];
+    this.data = new int [10];
     //init instance vars
-this.numberElements = 0;
-
+    this.numberElements = 0;
+    
+  }
 
   // ~~~~~~~~~~~~~~~ METHODS ~~~~~~~~~~~~~~~
+  public void print()
+  {
+    for(int i=0; i < numberElements ;i++){
+      System.out.println(this.data[i]);
+    }
+    
+  }
   public void add( int value )
   {
     // test to see if we need to grow, then grow
-    /**
-       IMPORTANT:
-       This is the first code that should run in this method
-       but the last code you should write.
-       Implement the rest of this method first,
-       then only write this section once the rest is tested and working.
-    */
-    /* YOUR SIMPLE+SMART CODE HERE */
+      if(numberElements == data.length) {
+        this.grow();
+        /*
+        int[] data2 = new int[data.length + 10];
+        for(int i = 0; i < data.length; i++)
+          {
+            data2[i] = data[i];
+          }
+        data = data2;
+          */      
+      }     
+    
+ 
 
     // add item
-    /* YOUR SIMPLE+SMART CODE HERE */
-
+    data[numberElements] = value;
 
     // increment numberElements
-    /* YOUR SIMPLE+SMART CODE HERE */
-
+    
+    numberElements += 1;
   }//end add()
 
 
   public boolean isEmpty()
   {
     //return whether this SuperArray instance is empty
-   return(numberElements==0);
+    if(numberElements == 0){
+      return true;    
+    } else {
+      return false;
+    }
+      
+    // you can also just type:
+    //return(numberElements==0);
+    //or
+    //return numberElements == 0;
+    //which do the same thing as the if(){}else{} statement
   }
 
 
@@ -89,7 +111,8 @@ this.numberElements = 0;
   {
     //return item at index
     /* YOUR SIMPLE+SMART CODE HERE */
-    return 1;
+    
+    return data[index];
   }
 
 
@@ -97,7 +120,11 @@ this.numberElements = 0;
   {
     //return stringified version of this Object
     /* YOUR SIMPLE+SMART CODE HERE */
-    return "";
+    String str = "";
+    for(int i = 0; i < numberElements; i++){
+      str = str + data[i] + " ";
+    }
+    return str;
   }//end toString()
 
 
@@ -120,10 +147,13 @@ this.numberElements = 0;
   public void remove(int index)
   {
     // shift items down to remove the item at index
-    /* YOUR SIMPLE+SMART CODE HERE */
-
+        for(int i = index; i < numberElements - 1; i++){
+      data[i] = data[i+1];
+    }
     // subtract fom numElements;
-    /* YOUR SIMPLE+SMART CODE HERE */
+   numberElements --;
+    
+    
   }
 
 
@@ -131,15 +161,27 @@ this.numberElements = 0;
   {
     // see if there's enough room
     /* YOUR SIMPLE+SMART CODE HERE */
-
+  if(index > numberElements){
+    System.out.println("Not enough indeces...the array is unchanged.");
+    
+  } else {
+            
+    if(numberElements == data.length){
+      this.grow();
+    }
+ for(int i = numberElements; i > index; i--){
+   data[i] = data[i-1];
+ }
     // shift elements toward the end of the array
     /* YOUR SIMPLE+SMART CODE HERE */
 
     // insert new element
     /* YOUR SIMPLE+SMART CODE HERE */
-
+data[index] = value;
     // increment numElements
     /* YOUR SIMPLE+SMART CODE HERE */
+    numberElements++;
+     }
   }
 
 
@@ -147,12 +189,21 @@ this.numberElements = 0;
   {
     // create a new array with extra space
     // Q: How did you decide how much to increase capacity by?
-    /* YOUR SIMPLE+SMART CODE HERE */
+    int[] data2 = new int[data.length + 10];
 
-    // copy over all the elements from the old array to the new one
-    /* YOUR SIMPLE+SMART CODE HERE */
+    // copy over all the elements from the old array to the new one    
+    for(int i = 0; i < data.length; i++)
+      {
+        data2[i] = data[i];
+      }
 
-    // point data to the new array
+    // point data to the new array    
+    data = data2;
+
+
+
+
+
     // Q: How does this look when illustrated using encapsulation diagram?
     /* YOUR SIMPLE+SMART CODE HERE */
   }//end grow()
