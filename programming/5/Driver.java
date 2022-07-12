@@ -28,7 +28,7 @@ public class Driver {
 
 	//assign var the address of a newly-apportioned Time object
 	t = new Time(10, 30, 15);
-  t2 = new Time(9,40,15)
+  t2 = new Time(9,40,15);
   System.out.println(t.toString());
   System.out.println(t);
   String temp = t + "!";
