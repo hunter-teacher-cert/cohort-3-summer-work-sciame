@@ -84,7 +84,7 @@ public class Test{
   public static int sumOfList(ArrayList<Integer> dataList){
     int sum = 0;
     for(int i = 0; i < dataList.size(); i++){  //.size() gets the length of the data list
-      sum = sum + get.dataList(i);
+      sum = sum + dataList.get(i);
       //sum = sum + dataList[i];
       //same as:
       //sum += dataList[i]
@@ -103,9 +103,19 @@ public class Test{
     The value that was in dataList[index1] is now in dataList[index2], and
     the value  that was in dataList[index2] is now in dataList[index1].
   - No other values should be modified.
-  */
-  public static void swapElements(ArrayList<Integer> dataList, int index1,int index2){
+  */ 
+  public static void swapElements(ArrayList<Integer>    dataList, int index1,int index2){
+    
+    //initialize a placeholder variable  
+    int num;
 
+    //get the value at index1 and save if for later
+    num = dataList.get(index1);
+
+    //           
+    dataList.set(index1, dataList.get(index2));
+    
+      dataList.set(index2, num);
   }
 
   /**
@@ -159,10 +169,10 @@ public static void main(String[] args) {
     //Uncomment these to test buildRandomList
     al = buildRandomList(10,100);
     System.out.println(al);
-System.out.println(sumOfList(al));
+    System.out.println(sumOfList(al));
     //Uncomment these to test swapElements
-    //swapElements(al,2,6); // NOTE: had to include al
-    //System.out.println(al);
+    swapElements(al,2,6); // NOTE: had to include al
+    System.out.println(al);
 
     // Uncomment these to test removeValue
     //al.add(5);
