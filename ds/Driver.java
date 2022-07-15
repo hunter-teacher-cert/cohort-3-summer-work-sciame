@@ -54,7 +54,8 @@ public class Driver{
 	// 3. loops until walker gets to null
 
       while(walker !=null) {
-        
+        System.out.print(walker);
+        walker = walker.getNext();
       }
 	
     }
