@@ -82,7 +82,16 @@ public class LinkedList{
   returns the number of elements in the list
   */
   public int size(){
-    return 0;
+
+    int i = 0; // set index to first element
+    Node walker = head; // set Walker to head
+    while(walker !=null) {
+
+      walker = walker.getNext();
+      i++;
+       
+    }
+    return i;
   }
 
 
@@ -102,11 +111,35 @@ public class LinkedList{
   "a"-> "z" -> "b" -> "c" -> "d"
 
   */
-  public void add(int index, String value){
-
+  public void add(int index, String value){ 
+    int i = 0;
+    Node brand_new = new Node(value); // create new node with a given element
+    Node walker = head;//start traversing at the head 
+      
+    if(index==0){ // if added to the head go back to orginal add method with one argument
+      add(value);
+    } else {
+      while(index-1 != i){//keep doing this until we get to the node right before where we want to insert
+        i++;//increment the counter variable
+        walker = walker.getNext();//assign walker to point to the next node 
+      }
+      brand_new.setNext(walker.getNext()); //sets it to the value of the next node, since we stopped at the node before where we want to insert
+      walker.setNext(brand_new); //walker now has the value that brand_new is currently set at 
+      //the last item of a linkedlist is always null - therefore adding to end of list is not a special case 
+    }
   }
 
-
+/*
+  public void add(String value){
+  Node first = new Node(value);
+  first.setNext(head);
+  //another one line way to do the above...
+  //Node first = new Node(value, head);
+    
+    
+  head = first;
+  }
+*/
   /**
   Returns the index (location) of the first node in the list
   that contains value.
@@ -117,10 +150,19 @@ public class LinkedList{
   indexOf("d") would return 3 since "d" is at location 3.
 
   */
+  // ****************** //
+  // Begin here on 7/19 //
+  // ****************** //
   public int indexOf(String value){
+    int i = 0;
+    Node walker = head;
+    while(walker.getData() != value){
+      //we added the above condition right before lunch on Monday 7/18/22 👍
+      //add something here
+      i++;
+    }
     return 0;
   }
-
 
   /**
   This routine should create a new array that is the same
@@ -134,8 +176,7 @@ public class LinkedList{
     return null;
   }
 
-
-
+  
   /**
   Remove the Node at location index from the list.
 
