@@ -1,0 +1,60 @@
+Team Bug Smashers :: <Shana Henry, Stacy Goldstein, Tanya Wardally, & Greg Sciame>
+Methods - Summer 2022-
+
+CODE TRACING in the classroom
+======================================
+
+
+PROS:
+---------------------------------------
+<general positive aspects of incorporating code or algorithm tracing into a CS course, from your perspective>
+- Allows peers to teach each other through sharing their traces (peer sharing)
+- Shows you how the computer runs the code
+- Helps de-mystify the code for some students
+
+CONS:
+---------------------------------------
+<general negative aspects of incorporating code or algorithm tracing into a CS course, from your perspective>
+- Stronger students feel like they're in the hot seat (forced TA's in a way)
+- Could be counter-productive in some circumstances
+- time consuming & hard to model because there isn't one way to do it
+
+BEST FOR:
+---------------------------------------
+<types of activities from courses you teach or have taught that could benefit from an emphasis on tracing>
+- helps to understand loops, iteration & recursion
+- helps to distinguish between loops, recursion, etc.
+- comparing efficiency if different approaches to problems
+- following the values of variables to determine the output of the program
+
+LEAST-SUITED TO:
+---------------------------------------
+<opposite of above -- and why>
+- testing large values
+- multi-step recursion as an intial demo 
+
+
+PROVEN PRO-TIPS:
+---------------------------------------
+<
+ anything that has worked well for any member of your team, in the way of ...
+ * live tracing ("trace-along" a la livecoding)
+ * tracing as an assignment
+ * tools, physical/online/otherwise that make it easier/clearer 
+  -multiplayer digital tools
+  -multi colors
+ * etc 
+>
+
+
+RESOURCES:
+---------------------------------------
+< any links, reading titles, names, etc. you have find useful >
+https://webwhiteboard.com/
+https://visualgo.net/en
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+https://pythontutor.com/java.html#mode=edit
+
+OTHER:
+---------------------------------------
+< anything you like, not already covered in prior prompts. >

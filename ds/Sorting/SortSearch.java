@@ -78,7 +78,7 @@ public class SortSearch{
     */
   
     public int findSmallestIndex(int start){
-      //initiate a smallIndex variable to the argument passed when findSmallestIndex is found...typically when this method
+      //initiate a smallIndex variable to the argument passed when findSmallestIndex is found...typically when this method is called it will start at the 0 position (see the SortSearchDriver.java test for this method in the other driver file)
 	int smallIndex = start;
       //for loop runs through the length of the data.
 	for(int i = start; i < data.size(); i++){
