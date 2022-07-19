@@ -1,22 +1,22 @@
 import java.io.*;
 import java.util.*;
-
+//Greg Sciame, collaborators: Nicole C, Wayne T, Stacy G
 /**
 For all attempted methods, make sensible decisions for error and
 edge cases (such as indexing out of bounds).
 
 Basic
 -----
-add(string value)
-get(int index);
-toString()
+✅ add(string value)
+✅ get(int index);
+✅ toString()
 
 
 Intermediate (at least add, size + one of the other two)
 ------------
-size()
-add(int index,String value)
-indexOf(String value);
+✅ size()
+✅ add(int index,String value)
+✅ indexOf(String value);
 toArray()
 
 
@@ -150,18 +150,15 @@ public class LinkedList{
   indexOf("d") would return 3 since "d" is at location 3.
 
   */
-  // ****************** //
-  // Begin here on 7/19 //
-  // ****************** //
+ 
   public int indexOf(String value){
     int i = 0;
     Node walker = head;
     while(walker.getData() != value){
-      //we added the above condition right before lunch on Monday 7/18/22 👍
-      //add something here
+      walker = walker.getNext();      //add something here
       i++;
     }
-    return 0;
+    return  i;
   }
 
   /**
@@ -189,5 +186,30 @@ public class LinkedList{
   "a"->"b"->"d"->"e"
   */
   public void remove(int index){
+    int i = 0;
+    
   }
 }
+
+/*
+our add() method with 2 parameters, for research to use on writing remove()...
+public void add(int index, String value){ 
+    int i = 0;
+    Node brand_new = new Node(value); // create new node with a given element
+    Node walker = head;//start traversing at the head 
+      
+    if(index==0){ // if added to the head go back to orginal add method with one argument
+      add(value);
+    } else {
+      while(index-1 != i){//keep doing this until we get to the node right before where we want to insert
+        i++;//increment the counter variable
+        walker = walker.getNext();//assign walker to point to the next node 
+      }
+      brand_new.setNext(walker.getNext()); //sets it to the value of the next node, since we stopped at the node before where we want to insert
+      walker.setNext(brand_new); //walker now has the value that brand_new is currently set at 
+      //the last item of a linkedlist is always null - therefore adding to end of list is not a special case 
+    }
+  }
+*/
+
+//https://www.javadevjournal.com/data-structure/linked-list/ good resource for understanding linked lists 
