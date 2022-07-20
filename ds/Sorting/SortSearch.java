@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.util.*;
 
@@ -104,10 +105,42 @@ public class SortSearch{
        
 
     */
+  //this sort() method will put an array list of integers in order from smallest to largest...
     public void sort(){
-
-
+    //using a for(){} loop to start the sort process
+    for(int i = 0; i < data.size()-1; i++){
+      int swapIndex = findSmallestIndex(i);//sets smallest index to be stored in the swapIndex variable, this is made easier by calling findSmallestIndex() method from above...
+      int temp = data.get(i); //temp variable to get smallest number 
+      data.set(i, data.get(swapIndex)); //put the smallest number at the front of the list
+      data.set(swapIndex, temp); //put the number that was originally at the front where the smallest number USED to be
+      
+      
     }
+  }
+    //nested loop? (outside w/ find the smallest, inner loop sorts)...findSmallestIndex() uses a 
+    
+    //compare each index to the start, if it is smaller than switch places.
+
+      //psuedocode: searches through the list for the lowest value. When it finds it - it swaps the lowest value into the position of the current index
+
+      /* 
+Below is an idea that ended up being too many steps...
+if(data.get(findSmallestIndex(i))< data.get(i)){
+currentValue = data.get(i);
+swapValue = data.get(findSmallestIndex(i));
+data.set(i)
+
+
+ currentValue = data.get(i);
+        swapValue = data.get(findSmallestIndex(i));
+        data.set(i) = swapValue;
+        data.set(findSmallestIndex(i)) = currentValue;
+}
+*/
+      
+    
+
+    
 
 
 
