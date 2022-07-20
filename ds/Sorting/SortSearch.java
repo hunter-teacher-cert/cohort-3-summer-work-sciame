@@ -117,7 +117,7 @@ public class SortSearch{
       
     }
   }
-    //nested loop? (outside w/ find the smallest, inner loop sorts)...findSmallestIndex() uses a 
+    //nested loop? (outside w/ find the smallest, inner loop sorts)...findSmallestIndex() uses a loop...so it is kind of nested in that regard...
     
     //compare each index to the start, if it is smaller than switch places.
 
