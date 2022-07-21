@@ -1,6 +1,7 @@
 # CS Unplugged Activity Plan
 #### by MiddleSchool_i_sHell
 Roster: Saranii Muller, Patti Elfers Wygand, Adam Driggers, Greg Sciame
+
 ![Draw a Square](square.gif)
 
 

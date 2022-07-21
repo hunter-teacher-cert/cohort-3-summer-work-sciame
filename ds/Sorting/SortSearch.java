@@ -157,9 +157,19 @@ data.set(i)
 
     */
     public int linearSearch(int value){
+
+      //we need a loop to traverse the array
+      for(int i=0; i < data.size(); i++){
+        if(value == data.get(i)){
+          return i;
+        }
+          
+      }
+      //we can use a for() loop since we know the .size()
+      //we will compare the value at each index to our search value (parameter), will return the index of the value
+      //otherwise, return -1
 	
-	
-	return 0; // replace this return
+	return -1; // replace this return
     }
     
     /**
@@ -169,12 +179,33 @@ data.set(i)
     */
     public int binarySearch(int value){
 
-	// create assign variables  representing the high, low and middle indices 
-	// while we're not done:
-	//   if the item is at data.get(middle), return middle
+	// create assign variables  representing the high, low and middle indices
+      int highIndex = data.size() - 1;
+      int lowIndex = 0;
+      int midIndex;
+      
+	// while we're not done...
+  //while the value we want is not the middle value:
+  //while lowIndex is less than high
+      while(lowIndex <= highIndex) {
+        midIndex = (highIndex + lowIndex)/2;
+        if(value == data.get(midIndex)){
+          return midIndex;
+          
+        } else if (value < data.get(midIndex)){
+          highIndex = midIndex - 1;
+        } else {
+          lowIndex = midIndex + 1;
+        }
+      }
+  
+	//   if the item is at data.get(midIndex), return middle
+        //if value == data.get(midIndex), return middle
+        //
+      
 	//   otherwise, update high, low, and middle
 
-	return 0;
+	return -1;
 	    
     }
     
