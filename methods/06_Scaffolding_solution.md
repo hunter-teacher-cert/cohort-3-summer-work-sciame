@@ -18,6 +18,6 @@
 * * *
 
 ### Related resources
-* [Scratch Solution File](https://scratch.mit.edu/projects/716058885/)
+* [Scratch Solution File](https://scratch.mit.edu/projects/10128067/)
 
 * * *
