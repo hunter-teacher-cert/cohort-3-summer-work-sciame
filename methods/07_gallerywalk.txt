@@ -1,0 +1,35 @@
+Greg Sciame
+Methods Summer 2022
+GALLERY TOUR LOG
+
+
+USAGE OF TOP SECTION: 
+* Fill in discoveries etc section as you go, or after your is complete.
+* Replicate the 
+* Delete these instructions once read.
+====================================================
+DISCOVERIES:
+* markdown image formatting
+* markdown hyperlink formatting
+* Using the snipping tool for sharing images of the console/shell
+* creating a directory for 'images' or 'pages' so it's easier to make local links
+*
+
+
+LINGERING QUESTIONS:
+* When the box around your github website link is blue, it isn't live yet...but when it's green it seems to be live...is this just based on how long it takes github to catch up to changes?
+* How to make an image clickable with markdown?  
+
+COMMENTS/CONCERNS/OTHER:
+* sometimes github changes are instantly noticeable, but other times is seems to take a huge amount of time...
+====================================================
+
+
+USAGE OF BOTTOM SECTION: 
+* For any site you deem notable, add an entry using the format below
+====================================================
+notable site:
+URL
+notable aspect:
+what is cool about this site
+-------------------------------------

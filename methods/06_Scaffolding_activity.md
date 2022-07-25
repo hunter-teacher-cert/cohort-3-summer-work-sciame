@@ -1,5 +1,7 @@
 # Scaffolding Activity
 #### by Saranii Muller & Greg Sciame
+![Activity Starter](activity.JPG)
+![Activity Starter 2](activity2.JPG)
 
 ### Technique: Scratch "Remix" (Do then change)
 

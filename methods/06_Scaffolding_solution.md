@@ -1,6 +1,9 @@
 # Scaffolding Activity
 #### by Saranii Muller & Greg Sciame
 
+![Activity Solution](solution.JPG)
+![Activity Solution 2](solution2.JPG)
+
 ### Technique: Scratch "Remix" (Do then change)
 
 #### Well-suited to...Introducing Scratch early in the year

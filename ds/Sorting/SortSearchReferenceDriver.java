@@ -5,12 +5,24 @@ public class SortSearchReferenceDriver {
     public static void main(String[] args) {
 
 
-	int size = 10001;
+	int size = 50001;
 
-	SortSearch ss = new SortSearch(size);
+	SortSearchReference ss = new SortSearchReference(size);
 
 	
-	
+
+//build a sorted arraylist list1:
+ArrayList<Integer> list1 = ss.buildIncreasingList(10);
+System.out.println(list1);
+
+//build a second Arraylist list2 here:
+ArrayList<Integer> list2 = ss.buildIncreasingList(15);
+System.out.println(list2);
+      
+      
+ArrayList<Integer> result = ss.merge(list1,list2);
+      System.out.println(result);
+      
 	// printing is really slow so we don't want
 	// to print when testing time.
 	// System.out.println(ss);

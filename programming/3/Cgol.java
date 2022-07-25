@@ -192,13 +192,6 @@ This is the one Joshua Higgins made from our group...I put it here to compare to
     printBoard(board);
     System.out.println("--------------------------\n\n");
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  }//end main()
+  }
 
-}//end class
-
-
-
-
-
-
-
+}
