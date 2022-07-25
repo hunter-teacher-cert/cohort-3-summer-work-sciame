@@ -2,22 +2,17 @@ Greg Sciame
 Methods Summer 2022
 GALLERY TOUR LOG
 
-
-USAGE OF TOP SECTION: 
-* Fill in discoveries etc section as you go, or after your is complete.
-* Replicate the 
-* Delete these instructions once read.
 ====================================================
 DISCOVERIES:
 * markdown image formatting
 * markdown hyperlink formatting
 * Using the snipping tool for sharing images of the console/shell
 * creating a directory for 'images' or 'pages' so it's easier to make local links
-*
+* windows button + '.' shortcut to emojis on pc
 
 
 LINGERING QUESTIONS:
-* When the box around your github website link is blue, it isn't live yet...but when it's green it seems to be live...is this just based on how long it takes github to catch up to changes?
+* When the box around your github website link is blue, it isn't live yet...but when it's green it seems to be live...is this just based on how long it takes github to catch up to changes?...I think I figured this out with DW's demo of the little '✔' or 'X'...NICE!!!!!!!
 * How to make an image clickable with markdown?  
 
 COMMENTS/CONCERNS/OTHER:
