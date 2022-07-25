@@ -197,7 +197,7 @@ I followed along with Marieke as she was demo-ing (she is in my group and solved
     //I got this code from Joshua Higgins...he was explaining how it works to our new group and in the sake of moving on, I copied it so I could have a a working algorithm to apply to the Game of Life problem...
     boolean[][] willExplode = new boolean[board.length][board[0].length];
     for(int i = 0; i < board.length; i++){
-      Array.fill(willExplode[i], false);
+      Arrays.fill(willExplode[i], false);
     }
     
     for(int i = 0; i < board.length; i++){

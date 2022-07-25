@@ -22,6 +22,7 @@ LINGERING QUESTIONS:
 
 COMMENTS/CONCERNS/OTHER:
 * sometimes github changes are instantly noticeable, but other times is seems to take a huge amount of time...
+* I think I figured this out with DW's demo of the little '✔' or 'X'...NICE!!!!!!!
 ====================================================
 
 
@@ -29,7 +30,9 @@ USAGE OF BOTTOM SECTION:
 * For any site you deem notable, add an entry using the format below
 ====================================================
 notable site:
+https://amanewei.github.io/nycscertweb/
 URL
-notable aspect:
-what is cool about this site
+notable aspect: I liked Amanda's to do list at the bottom 😁.
+what is cool about this site: 
+the images Amanda used ...and the to do list is funny
 -------------------------------------
