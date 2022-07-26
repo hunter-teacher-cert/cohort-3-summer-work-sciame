@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 
@@ -234,6 +233,113 @@ data.set(i)
 	
     }
     
+    /* Merge Sort Stuff after here */
+    /**
+       Builds and returns an ArrayList that's already in increasing order.
 
+       You can use this method to test your merge method.
+
+    */
+    public ArrayList<Integer> buildIncreasingList(int size){
+	ArrayList<Integer>  newlist = new ArrayList<Integer>();
+	Random r = new Random();
+	int nextval = r.nextInt(20)+1;
+	for (int i=0;i<size;i++){
+	    newlist.add(nextval);
+	    nextval = nextval + r.nextInt(20);
+	}
+
+	return newlist;
+	}
+
+    /**
+       this routine should create and return a new ArrayList of
+       integers and fill it by merging list1 and list2 into the new
+       list.
+
+       list1 and list2 are already sorted in increasing order.
+
+       Example:
+       If list1 contains [1,5,17,25]
+       and list2 contains [3,6,10,30,40,50]
+
+       The new list will contain:
+       [1, 3, 5, 6, 10, 17, 25, 30, 40, 50]
+
+       
+    */
+  public ArrayList<Integer> mergeSort(ArrayList<Integer> list){
+int size = list.size();
+    
+    // check for base case
+if(size < 2){
+  return list;
+} else {// if not the base case
+    ArrayList<Integer> listA = new ArrayList<Integer>(list.subList(0,size/2)); 
+    //creates new list variables to fill after we split orignal list for merge sort
+    ArrayList<Integer> listB = new ArrayList<Integer>(list.subList(size/2,size));
+        //creates new list variables to fill after we split orignal list for merge sort
+
+    ArrayList<Integer> SortedListA = mergeSort(listA);//sorts list a  // meregSort the left half
+    ArrayList<Integer> SortedListB = mergeSort(listB);//sorts list b
+  
+    ArrayList<Integer> MergedList = merge(SortedListA, SortedListB);// merge them together into a new list
+  
+    return MergedList;
+}
+      
+      
+     
+      
+      // return that new list 
+
+  }
+
+
+  public void msort(){
+      data =  mergeSort(data);
+  }
+
+
+  
+    public ArrayList<Integer> merge(ArrayList<Integer> list1,
+				    ArrayList<Integer> list2){
+
+      ArrayList<Integer> merged = new ArrayList<Integer>();
+      
+	// code for merge
+  // keep comparing the first items of list1 & list2
+  //taking the smaller for the new merged list
+  //until we're done
+
+      while(list1.size()>0 && list2.size()>0){
+        if(list1.get(0) < list2.get(0)){
+          //copy list1's first to merged
+          //and remove it from list 1
+          merged.add(list1.get(0));
+          list1.remove(0);
+        } else {
+          //copy list2's first to merged
+          //and remive it from list 2
+          merged.add(list2.get(0));
+          list2.remove(0);
+        }
+      }
+        //At this point, list1 or list2 will be empty but the OTHER one will have one or more items to copy
+
+        //this will be true until list one is empty
+      while(list1.size()>0){
+        merged.add(list1.get(0));
+        list1.remove(0);
+      }
+
+      while(list2.size()>0){
+        merged.add(list2.get(0));
+        list2.remove(0);
+      }
+  
+      
+	return merged; // replace this line
+    }
     
 }

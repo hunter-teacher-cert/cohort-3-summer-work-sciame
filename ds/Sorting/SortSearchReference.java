@@ -1,3 +1,4 @@
+/*
 import java.io.*;
 import java.util.*;
 
@@ -7,12 +8,13 @@ import java.util.*;
   2. Complete the binary search (Intermediate)
   3. Complete the recursive version of binary search (Advanced)
 */
-
+/*
 public class SortSearchReference{
 
     /* Sort project starts here */
     
     /* Instance Variables */
+/*
     private ArrayList<Integer> data;  // to store the data
     
     private Random r; 
@@ -22,7 +24,7 @@ public class SortSearchReference{
 	data = new ArrayList<Integer>();
 	r = new Random();
 	for (int i=0;i<15;i++){
-	    data.add(r.nextInt(20));
+	    data.add(r.nextInt(99));
 	}
 	
     }
@@ -31,12 +33,13 @@ public class SortSearchReference{
 	data = new ArrayList<Integer>();
 	r = new Random();
 	for (int i=0;i<size;i++){
-	    data.add(r.nextInt(20));
+	    data.add(r.nextInt(99));
 	}
 	
     }
 
     /* Convenience function to get data out of the ArrayList from the driver */
+/*
     public int get(int index){
 	return this.data.get(index);
     }
@@ -58,6 +61,7 @@ public class SortSearchReference{
       return 1 since the value 3 is in index 1 and that is the smallest.
       
     */
+  /*
     public int findSmallestIndex(int start){
 	int smallIndex = start;
 	int i;
@@ -72,7 +76,7 @@ public class SortSearchReference{
     }
 
 
-    /**
+    /*
        Implement the selection sort algorithm by sorting the ArrayList
        data in place.
 
@@ -85,7 +89,7 @@ public class SortSearchReference{
 	 
        
 
-    */
+    
     public void sort(){
 	int i;
 	int tmp;
@@ -113,7 +117,7 @@ public class SortSearchReference{
 
        This algorithm works on any ArrayList.
 
-    */
+    
     public int linearSearch(int value){
 	int i = 0;
 	for (i=0;i<data.size();i++){
@@ -124,11 +128,11 @@ public class SortSearchReference{
 	
     }
     
-    /**
+    
        Implement a binary search as specified by the comments
        
        This algorithm only works on sorted ArrayLists.
-    */
+    
     public int binarySearch(int value){
 
 	// create assign variables  representing the high, low and middle indices
@@ -162,7 +166,7 @@ public class SortSearchReference{
        Implement a RECURSIVE binary search as specified by the comments
        
        This algorithm only works on sorted ArrayLists.
-    */
+    
 
     public int binarySearchRecursive(int value, int lowIndex, int highIndex){
 	if (lowIndex > highIndex)
@@ -203,6 +207,7 @@ public class SortSearchReference{
        You can use this method to test your merge method.
 
     */
+  /*
     public ArrayList<Integer> buildIncreasingList(int size){
 	ArrayList<Integer>  newlist = new ArrayList<Integer>();
 	Random r = new Random();
@@ -214,7 +219,7 @@ public class SortSearchReference{
 
 	return newlist;
 	}
-
+*/
     /**
        this routine should create and return a new ArrayList of
        integers and fill it by merging list1 and list2 into the new
@@ -231,7 +236,31 @@ public class SortSearchReference{
 
        
     */
-       
+  /*
+  public ArrayList<Integer> mergeSort(ArrayList<Integer> list){
+
+      // check for base case
+if(list.size()<2){
+  return list;
+} else {
+  
+}
+      // if not the base case
+      // split in two lists
+      // meregSort the left half
+      // mergeSort the right half
+      // merge them together into a new list
+      // return that new list 
+return list;
+  }
+*/
+/*
+  public void msort(){
+      data =  mergeSort(data);
+  }
+
+
+  
     public ArrayList<Integer> merge(ArrayList<Integer> list1,
 				    ArrayList<Integer> list2){
 
@@ -275,3 +304,4 @@ public class SortSearchReference{
     
     
 }
+*/

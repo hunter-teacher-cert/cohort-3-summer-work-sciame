@@ -5,24 +5,25 @@ public class SortSearchReferenceDriver {
     public static void main(String[] args) {
 
 
-	int size = 50001;
+	//int size = 20;
 
-	SortSearchReference ss = new SortSearchReference(size);
+	//SortSearchReference ss = new SortSearchReference(size);
 
-	
-
-//build a sorted arraylist list1:
-ArrayList<Integer> list1 = ss.buildIncreasingList(10);
+	//System.out.println(ss);
+/*
+//build a sorted ArrayList list1:
+ArrayList<Integer> list1 = ss.buildIncreasingList(5);
 System.out.println(list1);
-
-//build a second Arraylist list2 here:
-ArrayList<Integer> list2 = ss.buildIncreasingList(15);
+System.out.println();
+//build a second ArrayList list2 here:
+ArrayList<Integer> list2 = ss.buildIncreasingList(10);
 System.out.println(list2);
-      
+ System.out.println();     
       
 ArrayList<Integer> result = ss.merge(list1,list2);
       System.out.println(result);
-      
+      System.out.println();
+   
 	// printing is really slow so we don't want
 	// to print when testing time.
 	// System.out.println(ss);
@@ -49,5 +50,6 @@ ArrayList<Integer> result = ss.merge(list1,list2);
 
       elapsed = System.currentTimeMillis() - start;
 	    System.out.println("Size: " + size + " Binary search time (ms) for the last index: " + elapsed);
+      */
     }
 }

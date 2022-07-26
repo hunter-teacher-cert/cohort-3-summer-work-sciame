@@ -7,11 +7,13 @@ public class SortSearchDriver {
 
 	// Uncomment these to test part 1
 	
-	SortSearch ss = new SortSearch(20);
-  System.out.println();
-	System.out.println(ss);
-	
-		
+	SortSearch testList = new SortSearch(20);
+  
+      System.out.println();
+	    System.out.println(testList);
+      testList.msort();
+      System.out.println(testList);
+	/*	
 	// Uncomment these to test part 2
 
 	int i;
@@ -46,5 +48,6 @@ public class SortSearchDriver {
       binaryResult = ss.binarySearch(5);
       System.out.print("A 5 is at index: ");
       System.out.println(binaryResult);
+      */
     }
 }
